@@ -1,0 +1,14 @@
+.ulFooter h1 {
+ font-size: 18px;
+}
+
+.ulFooter li {
+ color: #282c30;
+ line-height: 24px;
+ letter-spacing: -1px;
+ cursor: pointer;
+}
+
+.ulFooter li:hover {
+ text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+.paginationContainer {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 2rem;
+ background-color: rgb(215, 215, 215);
+ padding: .2rem .5rem;
+ list-style: none;
+ margin: auto auto;
+ margin-top: 30px;
+ color: white;
+}
+
+.paginationContainer li {
+ padding: 0.2rem;
+ color: rgb(170, 170, 170);
+}
+
+.paginationContainer li  a {
+ text-decoration: none;
+color: rgb(19, 18, 18);
+ font-weight: 700;
+}
+
+.paginationContainer a:hover {
+ background-color: transparent;
+ color: rgb(58, 55, 224);
+}
+
+.paginationContainer li:hover {
+ border: 2px solid black;
+ font-weight: bolder;
+}
+
+.selected{
+ border: 2px solid black;
+ font-weight: bolder;
+}
+.selected a {
+ color: white;
+}

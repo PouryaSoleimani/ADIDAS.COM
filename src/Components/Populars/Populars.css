@@ -1,0 +1,16 @@
+#popularsDiv li {
+ border-bottom: 4px solid black !important;
+ cursor: pointer;
+}
+
+#popularsDiv li:hover {
+ border-bottom: 8px solid black !important;
+}
+
+#popularsDiv Link {
+ cursor: pointer;
+}
+
+#popularsDiv Link:hover li {
+ border-bottom: 8px solid black !important;
+}
