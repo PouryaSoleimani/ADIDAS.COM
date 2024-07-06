@@ -21,31 +21,31 @@ import BayernMunichBanner from '../Components/BayernMunichBanner/BayernMunichBan
 axios.defaults.baseURL = 'http://localhost:4000'
 
 const Home = () => {
- const [TOKEN, setTOKEN] = useRecoilState(token)
- const [ISLOGGEDIN, setISLOGGEDIN] = useRecoilState(isLoggedin)
- useEffect(() => {
-  if (TOKEN) { setISLOGGEDIN(true) }
- }, [])
+  const [ TOKEN, setTOKEN ] = useRecoilState(token)
+  const [ ISLOGGEDIN, setISLOGGEDIN ] = useRecoilState(isLoggedin)
+  useEffect(() => {
+    if (TOKEN) { setISLOGGEDIN(true) }
+  }, [])
 
- return (
-  <div className='overflow-hidden pr-2'>
-   <Header />
-   <AllinVideoPart />
-   <BoxesHomePage />
-   <Yeezy />
-   <Populars />
-   <HomePageVideo />
-   <SwipeR />
-   <AdidasRetro />
-   <NationalKits />
-   <TrendingSwiper />
-   {/* <BayernMunichBanner /> */}
-   <TopFooter />
-   <InfoBar />
-   <JoinBanner />
-   <Footer topCount={7000} />
-  </div>
- )
+  return (
+    <div className='overflow-hidden pr-2'>
+      <Header />
+      <AllinVideoPart />
+      <BoxesHomePage />
+      <Yeezy />
+      <Populars />
+      <HomePageVideo />
+      <SwipeR />
+      <AdidasRetro />
+      <NationalKits />
+      <TrendingSwiper />
+      {/* <BayernMunichBanner /> */}
+      <TopFooter />
+      <InfoBar />
+      <JoinBanner />
+      <Footer topCount={7000} />
+    </div>
+  )
 }
 
 export default Home
