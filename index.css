@@ -3,41 +3,41 @@
 @tailwind utilities;
 
 @font-face {
- font-family: adidasBold;
- src: url(/fonts/adineue-PRO-Bold.ttf);
+  font-family: adidasBold;
+  src: url(/fonts/adineue-PRO-Bold.ttf);
 }
 
 @font-face {
- font-family: adinHaus;
- src: url(/fonts/AdihausDIN.ttf);
+  font-family: adinHaus;
+  src: url(/fonts/AdihausDIN.ttf);
 }
 
 @font-face {
- font-family: adinHausBold;
- src: url(/fonts/AdihausDIN\ Bold.ttf);
+  font-family: adinHausBold;
+  src: url(/fonts/AdihausDIN\ Bold.ttf);
 }
 
 @font-face {
- font-family: voucher;
- src: url(/fonts/voucher.ttf);
+  font-family: voucher;
+  src: url(/fonts/voucher.ttf);
 }
 
 html {
- width: 100%;
- height: 100%;
- font-family: adinHaus;
- margin: 0;
- padding: 0;
- overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: adinHaus;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .voucherText {
- font-family: voucher;
+  font-family: voucher;
 }
 
 .boxTitle,
 .ulMyAdidas {
- font-family: adinHausBold;
+  font-family: adinHausBold;
 }
 
 #popularsDiv,
@@ -52,22 +52,22 @@ html {
 .popularText,
 .productPagePrice,
 .emptyBag {
- font-family: adidasBold;
+  font-family: adidasBold;
 }
 
 .sidebarText {
- font-family: voucher;
- color: gray;
+  font-family: voucher;
+  color: gray;
 }
 
 .productPageTitle {
- font-family: voucher;
+  font-family: voucher;
 }
 
 .productTitle {
- font-family: adidasBold;
+  font-family: adidasBold;
 }
 
-.priceTag{
- font-family: adidasBold;
+.priceTag {
+  font-family: adidasBold;
 }
