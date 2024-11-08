@@ -16,7 +16,7 @@ const HomePageVideo = () => {
     <div className='-translate-y-[11rem] px-4 tracking-tight  sm:-translate-y-[10rem]  md:-translate-y-[15rem] flex flex-col space-y-2 md:space-y-4 md:px-8'>
      <h1 className=' z-10   text-slate-100 font-bold text-2xl md:text-5xl tracking-tighter font-sans'>2024 NATIONAL TEAMS SOCCER KITS</h1>
      <h3 className=' z-10  text-slate-100 text-md  md:text-2xl font-semibold tracking-tighter font-sans'>Time to show your Colors and gear up for a summer of colors</h3>
-     <button className='button z-10 w-[10rem] font-bold h-12 md:h-16 px-6 md:py-3'><Link to='/products'> <span className="text flex items-center gap-x-2 ">Shop Now<FaLongArrowAltRight /></span> <span className='text flex items-center gap-x-1'>SHOP</span>   </Link> </button>
+     <button className='button z-10 w-[10rem] font-bold h-12 md:h-16 px-6 md:py-3 whitespace-nowrap'><Link to='/products'> <span className="text flex items-center gap-x-2 -translate-x-2 ">Shop Now<FaLongArrowAltRight/></span> <span className='text flex items-center gap-x-1'>SHOP</span>   </Link> </button>
    </div>
   </div>
  )
