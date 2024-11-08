@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react'
-import { SiAdidas } from "react-icons/si";
+/* eslint-disable react/no-unescaped-entities */
+import { useEffect, useRef } from 'react'
 import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa";
 import { Link } from 'react-router-dom';
@@ -14,7 +14,7 @@ const AllinVideoPart = () => {
       {/* NEW COLLECTION ===============================================================================================================*/}
       <div className='flex justify-end h-full flex-col px-4 md:px-10 py-4 z-30 -translate-y-[11rem] sm:-translate-y-[10rem] md:-translate-y-[13rem] space-y-3 sm:space-y-4'>
         <h1 id='newCollection' className='text text-white text-2xl md:text-5xl font-extrabold tracking-tighter leading-tight z-30' >NEW COLLECTION 2024 IS NOW AVAILABLE </h1>
-        <button className='button text-xl md:text-5xl w-[7rem] h-[3rem] font-extrabold tracking-tighter leading-tight sm:w-[10rem] z-30'><Link to='/products/all'>LET'S GO ! <span>LET'S GO !</span></Link></button>
+        <button className='button text-xl md:text-5xl w-[7rem] h-[3rem] font-extrabold tracking-tighter leading-tight sm:w-[10rem] z-30 flex items-center justify-center '><Link to='/products/all' className='leading-tight'>LET'S GO ! <span className='whitespace-nowrap'>LET'S GO !</span></Link></button>
       {/* PLAY AND PAUSE */}
         <div className='flex space-x-2'>
           <button onClick={vidPlay} className='md:px-4 md:p-4 rounded-full duration-300 hover:bg-black hover:text-white flex items-center justify-center'><FaPlay className='text-white w-5 h-5' /></button>
