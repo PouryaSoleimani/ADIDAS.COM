@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useRef, useState } from 'react'
 import Header from './../Components/Header/Header'
 import ShoppingBagBreadCrumb from '../Components/ShoppingBagBreadCrumb/ShoppingBagBreadCrumb'
@@ -59,7 +60,7 @@ const WishList = () => {
      <h1 className='emptyBag text-4xl tracking-tighter'>YOUR <span className='bg-red-700 px-1 py-1 text-white'>WISHLIST</span> IS EMPTY</h1>
      <p className='tracking-tight'>Once you add something to your wishlift, it will appear here. Ready to get started?</p>
      <NavLink to='/products/all'>
-      <button className='button w-[10rem]'>GET STARTED <span>START</span></button>
+      <button className='button w-[10rem] whitespace-nowrap flex items-center justify-center'>GET STARTED <span>START</span></button>
      </NavLink>
     </div>
 
