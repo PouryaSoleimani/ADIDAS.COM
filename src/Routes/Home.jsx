@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 // ^ HOME __________________________________________________________________________________________________________
 import React, { useEffect } from 'react'
 import Header from '../Components/Header/Header'
