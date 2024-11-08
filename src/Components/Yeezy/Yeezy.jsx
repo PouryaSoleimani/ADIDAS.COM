@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Yeezy = () => {
@@ -10,7 +9,7 @@ const Yeezy = () => {
           YEEZY
         </h1>
         <span className='yeezy text-xl md:text-4xl text-zinc-700  font-extrabold tracking-wide leading-tight -translate-y-[43rem] md:-translate-y-[43rem] w-38 z-30'>Discover This Legend</span>
-        <button className='button text-2xl font-extrabold tracking-tighter leading-tight w-[10rem]  -translate-y-[44rem]  z-30'><Link to='/products/men'>Explore More <span>Explore</span></Link></button>
+        <button className='button text-2xl font-extrabold whitespace-nowrap tracking-tighter leading-tight w-[10rem]  -translate-y-[44rem]  z-30'><Link to='/products/men'>Explore More <span>Explore</span></Link></button>
       </div>
 
     </div>
