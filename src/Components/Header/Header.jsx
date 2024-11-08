@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
 // ^ HEADER ________________________________________________________________________________________________________
 import React, { Fragment, useState } from 'react'
 import { FaChevronDown, FaLongArrowAltRight } from "react-icons/fa";
@@ -64,12 +66,12 @@ const Header = () => {
                             </div>
 
                             {/* // RIGHT */}
-                            <div className='space-y-6'>
+                            <div className='space-y-6 -translate-y-6'>
                                 <h1 className='font-semibold tracking-tighter leading-tight text-[14px]'>FREE STANDARD SHIPPING WITH ADICLUB</h1>
                                 <p className='font-thin text-[12px]'>Sign up for adiClub to enjoy free standard shipping and earn points on every order. </p>
                                 <div className=''>
                                     <button className='button'>JOIN ADICLUB FOR FREE<span>JOIN</span></button>
-                                    <button className='button'>RETURNS & EXCHANGES<span>LETS'GO</span></button>
+                                    <button className='button'>RETURNS & EXCHANGES<span className='whitespace-nowrap -translate-y-2'>LETS'GO</span></button>
                                 </div>
                             </div>
                         </div>
