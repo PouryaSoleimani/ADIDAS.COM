@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import Header from './../Components/Header/Header'
 import ShoppingBagBreadCrumb from '../Components/ShoppingBagBreadCrumb/ShoppingBagBreadCrumb'
@@ -72,7 +74,7 @@ const ShoppingBag = () => {
      <h1 className='emptyBag text-4xl tracking-tighter'>YOUR BAG IS EMPTY</h1>
      <p className='tracking-tight'>Once you add something to your bag, it will appear here. Ready to get started?</p>
      <NavLink to='/products/all'>
-      <button className='button w-[10rem]'>GET STARTED <span>START</span></button>
+      <button className='button w-[10rem] whitespace-nowrap flex items-center justify-center'>GET STARTED<span>START</span></button>
      </NavLink>
     </div>
    ) : (
