@@ -28,24 +28,24 @@ const Home = () => {
  }, [])
 
  return (
-  <div className='overflow-hidden pr-2'>
-   <Header />
-   <AllinVideoPart />
-   <BoxesHomePage />
-   <Yeezy />
-   <Populars />
-   <HomePageVideo />
-   <SwipeR />
-   <AdidasRetro />
-   <NationalKits />
-   <TrendingSwiper />
-   {/* <BayernMunichBanner /> */}
-   <TopFooter />
-   <InfoBar />
-   <JoinBanner />
-   <Footer topCount={7000} />
-  </div>
- )
+   <div className="overflow-hidden pr-2">
+     <Header />
+     <AllinVideoPart />
+     <BoxesHomePage />
+     <Yeezy />
+     <Populars />
+     <HomePageVideo />
+     <SwipeR />
+     <AdidasRetro />
+     <NationalKits />
+     <TrendingSwiper />
+     {/* <BayernMunichBanner /> */}
+     <TopFooter />
+     <InfoBar />
+     <JoinBanner />
+     <Footer topCount={7000} />
+   </div>
+ );
 }
 
 export default Home
