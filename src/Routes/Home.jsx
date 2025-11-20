@@ -24,8 +24,10 @@ const Home = () => {
  const [TOKEN, setTOKEN] = useRecoilState(token)
  const [ISLOGGEDIN, setISLOGGEDIN] = useRecoilState(isLoggedin)
  useEffect(() => {
-  if (TOKEN) { setISLOGGEDIN(true) }
- }, [])
+   if (TOKEN) {
+     setISLOGGEDIN(true);
+   }
+ }, []);
 
  return (
    <div className="overflow-hidden pr-2">

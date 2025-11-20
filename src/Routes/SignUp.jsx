@@ -20,7 +20,7 @@ import { CgAdidas } from "react-icons/cg";
 import Header from '../Components/Header/Header'
 import InfoBar from '../Components/InfoBar/InfoBar'
 import JoinBanner from '../Components/JoinBanner/JoinBanner'
-import Footer from '../Components/Footer/Footer'
+import Footer from "../Components/Footer/Footer";
 
 //YUP SCHEMA ==============================================================================================================================
 const YupSchema = yup.object().shape({
@@ -38,78 +38,102 @@ const SignUp = () => {
   const notify = () => toast.success('Signed Up Successfully ')
   const navigate = useNavigate()
   useEffect(() => {
-    const localStorageData = localStorage.getItem('user')
+    const localStorageData = localStorage.getItem("user");
     if (localStorageData) { console.log(localStorageData) }
-  }, [])
+  }, [])              
 
 
   //^RETURN =================================================================================================================================================================================
   return (
-    <section id='container' className='flex flex-col items-center'>
+    <section id="container" className="flex flex-col items-center">
       <Header />
 
       {/*MOTO*/}
       <div id="allInMoto">
-        <img src="/images/LoginMoto.png" className='w-screen' />
+        <img src="/images/LoginMoto.png" className="w-screen" />
       </div>
-      <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="dark" transition:Bounce />
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition:Bounce
+      />
 
       {/*SIGN UP FORM*/}
       <Formik
-        initialValues={{ email: '', password: '' }}
-        //^ SIGN UP FUNCTON 
+        initialValues={{ email: "", password: "" }}
+        //^ SIGN UP FUNCTON
         onSubmit={(values, { setSubmitting }) => {
+          let userInfos = { email: values.email, password: values.password };
 
-          let userInfos = { email: values.email, password: values.password, }
-
-          axios.post('http://localhost:5000/signup', userInfos)
-            .then(response => {
-              console.log(response)
+          axios
+            .post("http://localhost:5000/signup", userInfos)
+            .then((response) => {
+              console.log(response);
               if (!response.status === 201) {
-                return response.text().then(text => { throw new Error })
+                return response.text().then((text) => {
+                  throw new Error();
+                });
               } else {
                 console.log(response);
-                const _Token = response.data.accessToken
-                const _UserInfos = response.data.user
-                setToken(_Token)
-                setUserInfos(_UserInfos)
-                localStorage.setItem('user', _Token)
-                notify()
+                const _Token = response.data.accessToken;
+                const _UserInfos = response.data.user;
+                setToken(_Token);
+                setUserInfos(_UserInfos);
+                localStorage.setItem("user", _Token);
+                notify();
                 setTimeout(() => {
                   setSubmitting(false);
-                  navigate('/login')
-                }, 3000)
+                  navigate("/login");
+                }, 3000);
               }
-            }
-            )
-            .catch(error => {
+            })
+            .catch((error) => {
               console.log(error.response.status, error.response.data);
-              const notify3 = () => toast.error(error.response.data)
-              notify3()
+              const notify3 = () => toast.error(error.response.data);
+              notify3();
               setTimeout(() => {
                 setSubmitting(false);
-              }, 2500)
-            })
-
+              }, 2500);
+            });
         }}
         validationSchema={YupSchema}
       >
-
         {({ isSubmitting }) => (
           <Form className="form mt-20">
-            <div className='flex justify-between w-full'>
-              <h1 className='text-4xl font-bold tracking-tighter formText'>SIGN UP</h1>
-              <CgAdidas className='w-10 h-10' />
+            <div className="flex justify-between w-full">
+              <h1 className="text-4xl font-bold tracking-tighter formText">
+                SIGN UP
+              </h1>
+              <CgAdidas className="w-10 h-10" />
             </div>
-            <div className="title">Welcome,
+            <div className="title">
+              Welcome,
               <br />
               <span>Sign up to continue</span>
             </div>
             {/*// INPUTS ============================================================================================================== */}
-            <Field type="email" placeholder="Email" name="email" className="input" />
-            <ErrorMessage name='email' />
-            <Field type="password" placeholder="Password" name="password" className="input" />
-            <ErrorMessage name='password' />
+            <Field
+              type="email"
+              placeholder="Email"
+              name="email"
+              className="input"
+            />
+            <ErrorMessage name="email" />
+            <Field
+              type="password"
+              placeholder="Password"
+              name="password"
+              className="input"
+            />
+            <ErrorMessage name="password" />
             {/* // LOGOS ============================================================================================================= */}
 
             <div className="login-with">
@@ -124,26 +148,39 @@ const SignUp = () => {
               <div className="button-log">
                 <BsApple />
               </div>
-
             </div>
 
             {/* // BUTTON ============================================================================================================= */}
-            <p className='mt-4'>Already Have an Account? <Link to='/login' className='text-blue-600 font-bold hover:underline'> Log in</Link></p>
-            <button disabled={isSubmitting} type='submit' className={`button-confirm ${isSubmitting ? 'button-confirm-disabled' : 'button-confirm'}`}>Sign Up →</button>
+            <p className="mt-4">
+              Already Have an Account?{" "}
+              <Link
+                to="/login"
+                className="text-blue-600 font-bold hover:underline"
+              >
+                {" "}
+                Log in
+              </Link>
+            </p>
+            <button
+              disabled={isSubmitting}
+              type="submit"
+              className={`button-confirm ${
+                isSubmitting ? "button-confirm-disabled" : "button-confirm"
+              }`}
+            >
+              Sign Up →
+            </button>
           </Form>
         )}
-
       </Formik>
       {/* // FOOTER =============================================================================================================== */}
-      <div className='translate-y-[8rem]'>
+      <div className="translate-y-[8rem]">
         <InfoBar />
         <JoinBanner />
         <Footer topCount={1000} />
       </div>
-
-
-    </section >
-  )
+    </section>
+  );
 }
 
 export default SignUp
