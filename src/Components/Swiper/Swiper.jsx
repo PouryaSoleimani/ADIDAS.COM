@@ -1,4 +1,4 @@
-// ^ SWIPER _____________________________________________________________________________________________
+// ^ SWIPER __________________________________________________________________________________________________________________________________________________________________________________________
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Keyboard } from 'swiper/modules';
@@ -53,4 +53,4 @@ const SwipeR = () => {
  )
 }
 
-export default SwipeR
+export default SwipeR;
