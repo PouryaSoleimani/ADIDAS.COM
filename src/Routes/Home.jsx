@@ -41,7 +41,7 @@ const Home = () => {
      <AdidasRetro />
      <NationalKits />
      <TrendingSwiper />
-     {/* <BayernMunichBanner /> */}
+     <BayernMunichBanner />
      <TopFooter />
      <InfoBar />
      <JoinBanner />

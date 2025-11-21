@@ -20,4 +20,4 @@ const TopFooter = () => {
  )
 }
 
-export default TopFooter
+export default TopFooter;
