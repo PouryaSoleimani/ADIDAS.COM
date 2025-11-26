@@ -13,14 +13,14 @@ const Products = () => {
     <div>
       <Header />
       <BreadCrumb />
-      <div className='flex'>
+      <div className="flex">
         <Outlet />
       </div>
       <InfoBar />
       <JoinBanner />
       <Footer topCount={1800} />
-    </div >
-  )
+    </div>
+  );
 }
 
 export default Products

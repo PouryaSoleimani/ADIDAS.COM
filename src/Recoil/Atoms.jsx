@@ -13,4 +13,4 @@ export const allProducts_atom = atom({ key: 'allProducts', default: [] })
 //? SHOPPING CART =================================================================================
 export const shoppingBag = atom({ key: 'shoppingBag', default: [], effects_UNSTABLE: [persistAtom] })
 //! WISHLIST ======================================================================================
-export const wishList = atom({ key: 'wishList', default: [], effects_UNSTABLE: [persistAtom] })
+export const wishList = atom({ key: "wishList", default: [], effects_UNSTABLE: [persistAtom] });
