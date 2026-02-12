@@ -18,10 +18,10 @@ const CheckOut = () => {
    <ShoppingBagBreadCrumb />
 
    <div id='checkOutHeader'>
-    <h1 className='emptyBag text-4xl text-center mt-10 underline decoration-8 decoration-sky-700'>YOUR CHECKOUT</h1>
+    <h1 className='mt-10 text-4xl text-center underline emptyBag decoration-8 decoration-sky-700'>YOUR CHECKOUT</h1>
    </div>
 
-   <div id='checkOutForm' className='flex items-center justify-center mt-16 pb-32'>
+   <div id='checkOutForm' className='flex items-center justify-center pb-32 mt-16'>
     <div className="modal">
      <form className="form">
       <div className="payment--options">
